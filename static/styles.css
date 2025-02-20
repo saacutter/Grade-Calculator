@@ -1,12 +1,20 @@
 /* Default values for all elements */
 * {
     font-family: Helvetica, Arial, sans-serif;
-    overflow-y: auto;
+    overflow: hidden;
+}
+
+.panel {
+    margin: 10px;
 }
 
 .header {
     text-align: center;
-    height: 15vh;
+    height: 8vh;
+}
+
+table {
+    width: 60%;
 }
 
 table, th, tr, td {
@@ -26,7 +34,7 @@ tfoot {
 
 input {
     border: 0px solid transparent;
-    margin: 0px;
+    width: 96%;
 }
 
 input:hover {
@@ -53,4 +61,35 @@ button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#final-table {
+    width: 40%;
+}
+
+#final-table td {
+    text-align: center;
+}
+
+/* Scaling for different screen sizes */
+@media screen and (max-width: 700px) {
+    table {
+        width: 100%;
+        font-size: 20px;
+        table-layout: fixed;
+    }
+
+    button {
+        width: 45%;
+    }
+
+    #final-table {
+        width: 100%;
+    }
 }
